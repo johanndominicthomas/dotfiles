@@ -1,0 +1,291 @@
+// -*- mode: jsonc -*-
+{
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 26, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 0, // Gaps between modules (4px)
+    "reload_style_on_change": true,
+
+    // Choose the order of the modules
+    "modules-left": [
+	"group/group-cpu",
+        "hyprland/workspaces",
+        "mpris"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+	"cava",
+        "tray",
+        "pulseaudio",
+	"bluetooth",
+        "network",
+        "backlight",
+	"power-profiles-daemon",
+        "battery",
+        "clock",
+        "group/group-power",
+    ],
+    // Modules configuration
+    "hyprland/workspaces": {
+	 "disable-scroll": true,
+	 "all-outputs": true,
+	 "warp-on-scroll": false,
+	 "format": "{icon}",
+	 "format-icons": {
+		"1": "",
+		"2": "",
+		"3": "",
+		"4": ""
+	 },
+	 "persistent-workspaces": { "*": [1] }
+	 },
+    "hyprland/window": {
+        "format": "{}",
+        "rewrite": {
+            "(.*) — Mozilla Firefox": "$1",
+	    ".*YouTube.*": "YouTube — Mozilla Firefox"
+        },
+        "separate-outputs": true
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰔡",
+            "deactivated": "󰨙"
+        },
+        "tooltip": true,
+        "tooltip-format-activated": "Idle Inhibitor On",
+        "tooltip-format-deactivated": "Idle Inhibitor Off"
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10,
+        // "icons": {
+        //   "blueman": "bluetooth",
+        //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
+        // }
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false,       
+                  
+    },
+    "memory": {
+        "format": "{}% ",
+        "tooltip": true,
+        "tooltip-format": "{used:0.1f}G/{total:0.1f}G "
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C ", 
+        "format-icons": ["", "", ""]
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["🌕", "🌔", "🌓", "🌒", "🌑"],
+	"scroll-step" : 5.0,
+	"tooltip" : false
+
+
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% ",
+        //"format-alt": "{icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["󰁺", "󰁼", "󰁾", "󰂁", "󰁹"]
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "󰾞",
+        "power-saver": ""
+      }
+    },
+    "network": {
+        //"interface": "en*,wl*", // (Optional) To force the use of this interface
+        "format-wifi": "{ifname}",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ifname}",
+        "tooltip-format-ethernet": "{ipaddr}/{cidr} 󰈀",
+        //"format-disabled": "DISABLED",
+        //"tooltip-format-disabled": "No network devices found",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        //"format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "kitty -e nmtui"        
+    },
+    "pulseaudio": {
+        "scroll-step": 5, // %, can be a float
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% 󰂯",
+        "format-bluetooth-muted": " {icon}",
+        "format-muted": " ",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "cava": {
+        "framerate": 144,
+        "autosens": 0,
+        "sensitivity": 10,
+        "bars": 14,
+        "lower_cutoff_freq": 500,
+        "higher_cutoff_freq": 10000,
+	"sleep_timer": 2,
+        "hide_on_silence": true,
+        //"format_silent": "quiet",
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+    },
+
+    "bluetooth": {
+ 	 "format": "󰂯",  // Font Awesome Bluetooth icon (U+F293)
+	 "format-disabled": "󰂲",
+ 	 "tooltip": true,
+	 "tooltip-format": "{}",
+	 "exec": "bluetoothctl info | grep -q 'Name:' && echo 'Connected' || echo 'Not connected'" ,
+ 	 "on-click": "~/.config/waybar/scripts/bluetooth.sh",
+ 	// "interval": 60
+    },
+    "mpris": {
+	"format": "{dynamic}",
+	"format-paused": "{dynamic}",
+        "format-stopped": "",
+        "interval": 2,
+        "dynamic-order": ["title","artist"],
+        "tooltip-format": "{player}({status})",
+        "dynamic-importance-order": ["title","artist"],
+        "title-len": 30,
+	"artist-len": 20,
+        "max-len": 30,
+        "ellipsis": "...",
+	"ignored-players": ["firefox"]
+    },
+
+    "custom/media": {
+        "format": "{icon} {text}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+
+     "group/group-cpu": {
+         "orientation": "inherit",
+         "drawer": {
+             "transition-duration": 500,
+             "children-class": "not-cpu",
+             "transition-left-to-right": true,
+         },
+         "modules": [
+              "custom/cputoggle", // First element is the "group leader" and won't ever>
+              "cpu",
+	      "memory",
+	      "temperature",
+         ]
+    },    
+    "group/group-power": {
+   	 "orientation": "inherit",
+   	 "drawer": {
+       	     "transition-duration": 500,
+             "children-class": "not-power",
+             "transition-left-to-right": false,
+         },
+   	 "modules": [
+              "user", // First element is the "group leader" and won't ever be hidden
+              "idle_inhibitor",
+	      "custom/quit",
+              "custom/lock",
+              "custom/reboot",
+	      "custom/sleep",
+	      "custom/power",
+   	 ]
+    },
+
+    "custom/quit": {
+   	 "format": "󰗼",
+   	 "tooltip": false,
+   	 "on-triple-click": "hyprctl dispatch exit"
+    },
+    "custom/lock": {
+   	 "format": "",
+    	 "tooltip": false,
+   	 "on-click": "hyprlock"
+    },
+    "custom/reboot": {
+    	"format": "",
+    	"tooltip": false,
+    	"on-triple-click": "reboot"
+    },
+    "custom/power": {
+    	"format": "",
+    	"tooltip": false,
+    	"on-triple-click": "shutdown now"
+    },
+    "custom/sleep": {
+        "format": "󰤄",
+        "tooltip": false,
+        "on-double-click": "systemctl suspend"
+    },
+    "custom/cputoggle": {
+        "format": "",
+        "tooltip": false,
+    },
+    "user": {
+        "format": "{user}",
+        "interval": 60,
+        "height": 30,
+        "width": 30,
+        "icon": true,
+	}
+}
+
+
