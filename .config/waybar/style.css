@@ -128,17 +128,17 @@ button {
 
 #clock {
     background-color: transparent;
-    color : #CBA6F7;
+    color : #ffffff;
 }
 
 #battery {
     background-color: transparent;
-    color: #ff5555;
+    color: #81C784;
     margin: 0 5px
 }
 
 #battery.charging, #battery.plugged {
-    color: #ff5555;
+    color: #81C784;
     background-color: transparent;
 }
 
@@ -181,23 +181,23 @@ label:focus {
 
 #cpu {
     background-color: transparent;
-    color: #CCCCCC;
+    color: #ff6347;
 }
 
 #memory {
     background-color: transparent;
-    color: #CCCCCC;
+    color: #87cefa;
 }
 
 
 #backlight {
     background-color: transparent;
-    color: #f1fa8c;
+    color: #FFD580;
 }
 
 #network {
     background-color: transparent;
-    color: #00bcd4;
+    color: #64B5F6;
 }
 
 #network.disconnected {
@@ -206,7 +206,7 @@ label:focus {
 
 #pulseaudio {
     background-color: transparent;
-    color: #f38ba8;
+    color: #E07BE0;
 }
 
 #pulseaudio.muted {
@@ -269,46 +269,47 @@ label:focus {
 
 
 #bluetooth{
-    color: #00ff7f;
-    font-size: 13px;
-    padding:0 10px;    
+    color: #A8D08D;
+    padding:0 10px;
+    font-size: 16px;
+    font-weight: bold;    
 }
 
 #cava{         
      
-   color: #a6e3a1;                             
+   color: #5CCFE6;                             
    letter-spacing: 1px;
    font-size: 9px;
 }
 
 #group-power{
-    padding: 0 6px;
+    padding: 0 5px;
     margin-right: 0px;
 }
 
 #custom-quit{  
-    padding: 0 5px;
-    color: #c04cfd;
+    padding: 0 4px;
+    color: #FF6F61;
 }
 
 #custom-reboot{  
-    padding: 0 5px;
-    color: #169673;
+    padding: 0 4px;
+    color: #4DB6AC;
 }
 
 #custom-lock{
-    padding: 0 5px;
-    color: #00ffff;
+    padding: 0 4px;
+    color: #4FC3F7;
 }
 
 #custom-power{ 
-    padding: 0 5px;
-    color: #ff0000;
+    padding: 0 4px;
+    color: #EF5350;
 }
 
 #custom-sleep{
-    padding: 0 5px;
-    color: #dced31 ;
+    padding: 0 4px;
+    color: #FFD54f;
 }
 
 #custom-cputoggle{
@@ -317,14 +318,16 @@ label:focus {
 }
 
 #mpris{
-    color: #00ff7f;
+    color: #00FF7F;
 }
 
 #idle_inhibitor{
     padding: 0 7px;
+    font-weight: normal;
+    font-size: 20px;
 }
 
 #user{
-	padding:0 2px;
-        color: #ff6ec7;
+    padding:0 2px;
+    color: #40E0D0;
 }
