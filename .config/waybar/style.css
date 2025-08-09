@@ -240,17 +240,19 @@ label:focus {
 
 #idle_inhibitor {
     background-color: transparent;
-    font-size: 13px;
+    padding: 0 4px;
+    font-weight: normal;
+    font-size: 20px;
 }
 
 #idle_inhibitor.activated {
     background-color: transparent;
-    color: #69E8FF;
+    color: #00B8D4;
 }
 
 #idle_inhibitor.deactivated {
     background-color: transparent;
-    color: #69E8FF;
+    color: #00B8D4;
 }
 
 #tray {
@@ -319,12 +321,6 @@ label:focus {
 
 #mpris{
     color: #00FF7F;
-}
-
-#idle_inhibitor{
-    padding: 0 7px;
-    font-weight: normal;
-    font-size: 20px;
 }
 
 #user{
