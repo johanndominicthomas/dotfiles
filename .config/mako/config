@@ -1,8 +1,9 @@
 default-timeout=5000
-background-color=#91d7e3
-text-color=#4C566A
+background-color=#01010133
+text-color=#ffffff
 font=JetBrainsMono Nerd Font
 border-size=2
-border-color=#31748F
+border-color=#ffffff80
 border-radius=8
-
+height=150
+width=350
