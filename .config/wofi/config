@@ -1,6 +1,0 @@
-style=/home/johann/.config/wofi/style.css
-location=center
-gtk_dark=true
-allow_markup=true
-matching=fuzzy
-allow_images=true
