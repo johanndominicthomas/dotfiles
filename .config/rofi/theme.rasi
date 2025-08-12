@@ -1,64 +1,61 @@
 * {
-    bg: #11121D80;
-    bg-alt: #444b6a;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
 
-    fg: #FFFFFF;
-    fg-alt: #787c99;
+  bg: #010101dd;
+  bg-alt: #232433;
+  fg: #6a6f87;
+  fg-alt: #ffffffdd;
 
-    background-color: @bg;
-
-    border: 0;
-    margin: 0;
-    padding: 0;
-    spacing: 0;
-} 
-window {
-    width: 45%;
-}
-
-element {
-    padding: 12;
-    text-color: @fg-alt;
-}
-
-element selected {
-    text-color: @fg;
-}
-
-element-text {
-    background-color: inherit;
-    text-color: inherit;
-    vertical-align: 0.5;
-}
-
-element-icon {
-    size: 30;
-}
-
-entry {
-  background-color: @bg-alt;
-  padding: 12;
+  background-color: @bg;
   text-color: @fg;
 }
 
-inputbar {
-  children: [prompt, entry];
-}
-
-listview {
-  background-color: @bg;
-  columns: 1;
-  lines: 8;
+window {
+  transparency: "real";
+  width: 800px;
+  height: 400px;
 }
 
 mainbox {
-  background-color: @bg;
   children: [inputbar, listview];
 }
 
-prompt {
+inputbar {
   background-color: @bg-alt;
-  enabled: true;
-  padding: 12 0 0 12;
-  text-color: @fg;
+  children: [prompt, entry];
+}
+
+entry {
+  background-color: inherit;
+  padding: 12px 3px;
+}
+
+prompt {
+  background-color: inherit;
+  padding: 12px;
+}
+
+listview {
+  lines: 8;
+}
+
+element {
+  children: [element-icon, element-text];
+  padding: 2px;
+}
+
+element-icon {
+  padding: 10px 10px;
+  size: 20px;
+}
+
+element-text {
+  padding: 10px 0;
+}
+
+element-text selected {
+  text-color: @fg-alt;
 }
