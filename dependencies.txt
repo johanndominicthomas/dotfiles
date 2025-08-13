@@ -1,0 +1,39 @@
+pacman  
+--------
+hyprland kitty sddm mako pipewire wireplumber xdg-desktop-portal-hyprland hyprpolkitagent
+qt5-wayland qt6-wayland hyprpaper hyprpicker hypridle hyprlock hyprshot  hyprsysteminfo 
+hyprland-qt-support hyprutils hyprlang hyprwayland-scanner aquamarine hyprgraphics
+hyprland-qtutils rofi cliphist udiskie acpi alsa-utils amd-ucode amdgpu_top 
+archlinux-xdg-menu  base blueman bluez-utils bluez bpytop brightnessctl  cava figlet
+cmatrix fastfetch gamescope gnome-themes-extra gwenview htop kate kvantum neovim net-tools
+okular papirus-icon-themes pavucontrol power-profiles-daemon psensor reflector stow 
+ttf-jetbrains-mono-nerd woff2-font-awesome wikiman asusctl
+
+
+AUR
+-----
+waybar-cava  ttf-jetbrains-mono-nerd  bibata-cursor-theme-bin gtk 
+
+
+
+systemctl
+------------
+# Display Manager
+sudo systemctl enable sddm.service --now
+
+
+# Audio stack
+systemctl --user enable pipewire.service --now
+systemctl --user enable wireplumber.service --now
+
+# Bluetooth
+sudo systemctl enable bluetooth.service --now
+
+# Power profiles
+sudo systemctl enable power-profiles-daemon.service --now
+
+# ASUS laptop controls
+sudo systemctl enable asusd.service --now
+
+
+
