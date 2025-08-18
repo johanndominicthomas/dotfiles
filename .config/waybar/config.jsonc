@@ -278,6 +278,7 @@
     "custom/cputoggle": {
         "format": "",
         "tooltip": false,
+	"on-click": "rofi -show drun",
     },
     "user": {
         "format": "{user}",
