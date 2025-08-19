@@ -95,7 +95,6 @@ button {
 
 
 #cava,
-#bluetooth
 #clock,
 #battery,
 #cpu,
@@ -267,19 +266,6 @@ label:focus {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
     background-color: transparent;
-}
-
-
-
-#bluetooth{
-    padding: 0 5px;
-    font-size: 17px;
-    font-weight: 600;
-    color: #929595;     
-}
-
-#bluetooth.connected{
-    color: #3584E4;
 }
 
 #cava{         

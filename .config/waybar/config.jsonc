@@ -21,7 +21,6 @@
         "tray",
         "pulseaudio",
 	"gamemode",
-	"bluetooth",
         "network",
         "backlight",
 	"power-profiles-daemon",
@@ -195,15 +194,6 @@
                    }
     },
 
-    "bluetooth": {
- 	 "format": "󰂯",  // Font Awesome Bluetooth icon (U+F293)
-	 "format-disabled": "󰂲",
- 	 "tooltip": true,
-	 "tooltip-format": "{}",
-	 "exec": "bluetoothctl info | grep -q 'Name:' && echo 'Connected' || echo 'Not connected'" ,
- 	 "on-click": "~/.config/waybar/scripts/bluetooth.sh",
- 	// "interval": 60
-    },
     "mpris": {
 	"format": "{dynamic}",
 	"format-paused": "{dynamic}",
