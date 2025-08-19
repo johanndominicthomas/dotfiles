@@ -107,6 +107,7 @@
             "warning": 30,
             "critical": 15
         },
+	"interval": 2,
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
         "format-charging": "{capacity}% 󰂄",
