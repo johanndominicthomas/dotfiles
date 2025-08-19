@@ -20,6 +20,7 @@
 	"cava",
         "tray",
         "pulseaudio",
+	"gamemode",
 	"bluetooth",
         "network",
         "backlight",
@@ -94,7 +95,7 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["🌕", "🌔", "🌓", "🌒", "🌑"],
+        "format-icons": ["󰃜", "󰃛", "󰃚"],
 	"scroll-step" : 5.0,
 	"tooltip" : false
 
@@ -126,7 +127,19 @@
         "power-saver": ""
       }
     },
-    "network": {
+    "gamemode": {
+		"format": "{glyph}",
+		"format-alt": "{glyph} {count}",
+		"glyph": "",
+		"hide-not-running": true,
+		"use-icon": true,
+		"icon-name": "input-gaming-symbolic",
+		"icon-spacing": 4,
+		"icon-size": 20,
+		"tooltip": true,
+		"tooltip-format": "Games running: {count}"
+     },
+     "network": {
         //"interface": "en*,wl*", // (Optional) To force the use of this interface
         "format-wifi": "{ifname}",
         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",

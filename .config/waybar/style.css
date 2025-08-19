@@ -102,6 +102,7 @@ button {
 #memory,
 #temperature,
 #backlight,
+#gamemode,
 #network,
 #pulseaudio,
 #custom-media,
@@ -271,7 +272,7 @@ label:focus {
 
 
 #bluetooth{
-    padding: 0 7px;
+    padding: 0 5px;
     font-size: 17px;
     font-weight: 600;
     color: #929595;     
@@ -330,4 +331,9 @@ label:focus {
 #user{
     padding:0 2px;
     color: #40E0D0;
+}
+
+#gamemode{
+    font-size: 10px;
+    padding: 0 4px;
 }
