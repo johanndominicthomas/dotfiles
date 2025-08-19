@@ -7,7 +7,8 @@ hyprland-qtutils rofi cliphist udiskie acpi alsa-utils amd-ucode amdgpu_top
 archlinux-xdg-menu  base blueman bluez-utils bluez bpytop brightnessctl  cava figlet
 cmatrix fastfetch gamescope gnome-themes-extra gwenview htop kate kvantum neovim net-tools
 okular papirus-icon-themes pavucontrol power-profiles-daemon psensor reflector stow 
-ttf-jetbrains-mono-nerd woff2-font-awesome wikiman asusctl
+ttf-jetbrains-mono-nerd woff2-font-awesome wikiman asusctl nm-connection-editor
+network-manager-applet 
 
 
 AUR
