@@ -19,11 +19,11 @@
     "modules-right": [
 	"cava",
         "tray",
+        "power-profiles-daemon",
         "pulseaudio",
 	"gamemode",
         "network",
         "backlight",
-	"power-profiles-daemon",
         "battery",
         "clock",
         "group/group-power",
