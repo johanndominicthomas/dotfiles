@@ -69,8 +69,8 @@
         // }
     },
     "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "{:%Y-%m-%d}",
+        "format": "{:%I:%M %p}",
+        "tooltip-format": "{:%A, %B %d, %Y}",
         "on-click": null
     },
     "cpu": {
