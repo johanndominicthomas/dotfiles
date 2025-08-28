@@ -113,13 +113,11 @@ button {
 }
 
 #power-profiles-daemon{
-   margin-right: 1px;
-   margin-left: 1px;
+   padding: 0 3px;
 }
 
 #tray{
-   margin-left: 1px;
-   margin-right: 1px;
+   padding: 0 2px;
 }
 
 #window,
