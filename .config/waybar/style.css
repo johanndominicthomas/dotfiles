@@ -120,6 +120,10 @@ button {
    padding: 0 2px;
 }
 
+#cava{
+   margin-right: 3px;
+}
+
 #window,
 #workspaces {
     margin: 0 4px;
