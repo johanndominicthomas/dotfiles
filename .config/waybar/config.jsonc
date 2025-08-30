@@ -48,7 +48,8 @@
             "(.*) — Mozilla Firefox": "$1",
 	    ".*YouTube.*": "YouTube — Mozilla Firefox"
         },
-        "separate-outputs": true
+        "separate-outputs": true,
+	"max-length": 70
     },
     "idle_inhibitor": {
         "format": "{icon}",
