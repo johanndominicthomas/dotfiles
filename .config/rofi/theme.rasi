@@ -20,7 +20,6 @@ window {
   border: 3px;
   border-color: @fg-alt;
   border-radius: 10px;
-  padding-bottom: 0px;
 }
 
 mainbox {
@@ -41,11 +40,12 @@ prompt {
   background-color: inherit;
   padding: 12px;
 }
-/*
+
 listview {
-  lines: 8;
+  /*lines: 8;*/
+  padding: 0px 0px 0px 15px;  /* top right bottom left */
 }
-*/
+
 
 element {
   children: [element-icon, element-text];
