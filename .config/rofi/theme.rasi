@@ -20,6 +20,7 @@ window {
   border: 3px;
   border-color: @fg-alt;
   border-radius: 10px;
+  padding: -2px;
 }
 
 mainbox {
