@@ -8,6 +8,7 @@
   bg-alt: #232433;
   fg: #6a6f87;
   fg-alt: #ffffffdd;
+  selected: #60e1e0;  
 
   background-color: @bg;
   text-color: @fg;
@@ -43,7 +44,7 @@ prompt {
 
 listview {
   /*lines: 8;*/
-  padding: 0px 0px 0px 15px;  /* top right bottom left */
+  padding: 0px 3px 0px 3px;  /* top right bottom left */
 }
 
 
@@ -63,4 +64,13 @@ element-text {
 
 element-text selected {
   text-color: @fg-alt;
+}
+
+element-text selected,
+element-icon selected {
+  background-color: @selected;
+}
+
+element selected{
+  border-radius: 10px;
 }
