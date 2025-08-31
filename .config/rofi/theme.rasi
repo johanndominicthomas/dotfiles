@@ -4,11 +4,12 @@
   padding: 0;
   spacing: 0;
 
-  bg: #010101dd;
-  bg-alt: #232433;
-  fg: #6a6f87;
-  fg-alt: #ffffffdd;
-  selected: #60e1e0;  
+  bg: #0b0e1add;
+  bg-alt: #14172b;
+  fg: #e0e6f0;
+  fg-alt: #a6b9ff;
+  selected: #f8f8ff;
+  text-selected: #1a1a1a;  
 
   background-color: @bg;
   text-color: @fg;
@@ -63,7 +64,7 @@ element-text {
 }
 
 element-text selected {
-  text-color: @fg-alt;
+  text-color: @text-selected;
 }
 
 element-text selected,
