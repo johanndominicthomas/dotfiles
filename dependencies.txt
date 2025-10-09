@@ -8,7 +8,7 @@ archlinux-xdg-menu  base blueman bluez-utils bluez bpytop brightnessctl  cava fi
 cmatrix fastfetch gamescope gnome-themes-extra gwenview htop kate kvantum neovim net-tools
 okular papirus-icon-theme pavucontrol power-profiles-daemon psensor reflector stow 
 ttf-jetbrains-mono-nerd woff2-font-awesome wikiman asusctl nm-connection-editor
-network-manager-applet nwg-look 
+network-manager-applet nwg-look gnome-keyring
 
 
 AUR
