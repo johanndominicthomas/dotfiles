@@ -16,6 +16,9 @@ git clone https://github.com/johanndominicthomas/dotfiles.git $HOME/dotfiles
 cd $HOME/dotfiles
 ```
 
+## Install Dependencies
+Open dependencies.txt using a text editor and run the commands mentioned in it to install the dependencies.
+
 ## Remove and create backup for the default config files
 ```
 chmod +x backup-configs.sh
