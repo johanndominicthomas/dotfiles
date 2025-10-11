@@ -22,6 +22,7 @@ cd $HOME/dotfiles
 Open dependencies.txt using a text editor and run the commands mentioned in it to install the dependencies.
 
 ## Remove and create backup for the default config files
+Make backup-configs.sh executable:
 
 ```bash
 chmod +x backup-configs.sh
