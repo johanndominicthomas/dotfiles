@@ -3,7 +3,7 @@
 This is the dotfiles for my Arch Linux - Hyprland setup. This repository contains the different config files for Hyprland and other utilities.
 
 
-## Setup Instructions
+### Setup Instructions
 
 Follow the different steps below to setup my dotfiles:
 ## Clone the repository
