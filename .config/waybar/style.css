@@ -173,6 +173,7 @@ button {
 }
 #power-profiles-daemon{
     font-size: 13px;
+    margin-left: 2px;
 }
 
 #power-profiles-daemon.performance {
