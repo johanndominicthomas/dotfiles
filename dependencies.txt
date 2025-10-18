@@ -1,6 +1,14 @@
 pacman  
 --------
-hyprland kitty sddm mako pipewire wireplumber xdg-desktop-portal-hyprland hyprpolkitagent qt5-wayland qt6-wayland hyprpaper hyprpicker hypridle hyprlock hyprshot hyprland-qt-support hyprutils hyprlang hyprwayland-scanner aquamarine hyprgraphics hyprland-qtutils rofi cliphist udiskie acpi alsa-utils amd-ucode amdgpu_top archlinux-xdg-menu  base blueman bluez-utils bluez bpytop brightnessctl  cava figlet cmatrix fastfetch gamescope gnome-themes-extra gwenview htop kate kvantum neovim net-tools okular papirus-icon-theme pavucontrol power-profiles-daemon psensor reflector stow  ttf-jetbrains-mono-nerd woff2-font-awesome wikiman  nm-connection-editor network-manager-applet nwg-look gnome-keyring pipewire-pulse lm_sensors
+hyprland kitty sddm mako pipewire wireplumber xdg-desktop-portal-hyprland hyprpolkitagent
+qt5-wayland qt6-wayland hyprpaper hyprpicker hypridle hyprlock hyprshot hyprland-qt-support
+hyprutils hyprlang hyprwayland-scanner aquamarine hyprgraphics hyprland-qtutils rofi cliphist
+udiskie acpi alsa-utils amd-ucode amdgpu_top archlinux-xdg-menu  base blueman bluez-utils
+bluez bpytop brightnessctl  cava figlet cmatrix fastfetch gamescope gnome-themes-extra
+gwenview htop kate kvantum neovim net-tools okular papirus-icon-theme pavucontrol
+power-profiles-daemon psensor reflector stow  ttf-jetbrains-mono-nerd woff2-font-awesome
+wikiman  nm-connection-editor network-manager-applet nwg-look gnome-keyring pipewire-pulse
+lm_sensors
 
 Run the Following command:
 sudo pacman -S --needed \
@@ -20,7 +28,8 @@ sudo pacman -S --needed \
 
 AUR
 -----
-waybar-cava  ttf-jetbrains-mono-nerd  bibata-cursor-theme-bin gtk hyprsysteminfo-git asusctl rog-control-center
+waybar-cava  ttf-jetbrains-mono-nerd  bibata-cursor-theme-bin gtk hyprsysteminfo-git asusctl
+rog-control-center
 
 Run the Following command:
 If using yay :
