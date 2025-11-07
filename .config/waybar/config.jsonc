@@ -17,7 +17,7 @@
         "hyprland/window"
     ],
     "modules-right": [
-	"cava",
+       //"cava",
         "tray",
         "power-profiles-daemon",
         "pulseaudio",
