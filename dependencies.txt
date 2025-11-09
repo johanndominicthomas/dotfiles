@@ -8,7 +8,7 @@ bluez bpytop brightnessctl  cava figlet cmatrix fastfetch gamescope gnome-themes
 gwenview htop kate kvantum neovim net-tools okular papirus-icon-theme pavucontrol
 power-profiles-daemon psensor reflector stow  ttf-jetbrains-mono-nerd woff2-font-awesome
 wikiman  nm-connection-editor network-manager-applet nwg-look gnome-keyring pipewire-pulse
-lm_sensors
+lm_sensors kvantum
 
 Run the Following command:
 sudo pacman -S --needed \
@@ -22,14 +22,14 @@ sudo pacman -S --needed \
   papirus-icon-theme pavucontrol power-profiles-daemon psensor reflector stow \
   ttf-jetbrains-mono-nerd woff2-font-awesome wikiman \
   nm-connection-editor network-manager-applet nwg-look gnome-keyring pipewire-pulse \
-  lm_sensors
+  lm_sensors kvantum
 
 
 
 AUR
 -----
 waybar-cava  ttf-jetbrains-mono-nerd  bibata-cursor-theme-bin gtk hyprsysteminfo-git asusctl
-rog-control-center
+rog-control-center qt6ct-kde
 
 Run the Following command:
 If using yay :
