@@ -3,11 +3,7 @@ configuration {
     drun-display-format: "{icon} {name}";
     show-icons: true;
     icon-theme: "Papirus";
-    
-    matching: "fuzzy";
-    sort: true;
-    sorting-method: "levenshtein";
-
+   
     timeout {
         action: "kb-cancel";
         delay: 0;
